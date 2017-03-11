@@ -12,12 +12,22 @@ import cv2
 import os
 
 from player import Player
+from display import Display
 
 __players__ = []
-def add_player(name='Untitled'):
+def new_player(name='Untitled'):
 	player = Player(name)
 	__players__.append(player)
 	return player
 
 def get_players():
 	return __players__
+
+__displays__ = []
+def new_display(name='Untitled', visible=True):
+	display = Display(name, visible)
+	__displays__.append(display)
+	return display
+
+def get_displays():
+	return __displays__

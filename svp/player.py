@@ -5,6 +5,11 @@
 Player Class
 """
 
+from PyQt5.QtWidgets import QWidget
+from PyQt5.QtCore import QTimer
+from PyQt5.QtGui import QImage, QPixmap
+import cv2
+
 class Player(QWidget):
     def __init__(self, *args):
         super(QWidget, self).__init__()
